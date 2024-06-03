@@ -12,7 +12,7 @@ const WorkoutDetails = ({ workout }) => {
     if(!user) {
       return
     }
-    const response = await  fetch('/api/workouts/' + workout._id, {
+    const response = await  fetch('https://trinitydev-1stmernserver.up.railway.app/api/workouts/' + workout._id, {
       method: 'DELETE',
       headers:  {
         'Authorization': `Bearer ${user.token}`
