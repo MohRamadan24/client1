@@ -12,7 +12,7 @@ const WorkoutDetails = ({ workout }) => {
     if(!user) {
       return
     }
-    const response = await  fetch('https://server1-6m8uwps06-tinitymerge-devs-projects.vercel.app/api/workouts/' + workout._id, {
+    const response = await  fetch('https://server1-9blggpmkw-tinitymerge-devs-projects.vercel.app/api/workouts/' + workout._id, {
       method: 'DELETE',
       headers:  {
         'Authorization': `Bearer ${user.token}`
