@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-        const response = await fetch('https://trinitydev-1stmernserver.up.railway.app/api/workouts', {
+        const response = await fetch('https://server1-2i4o.vercel.app//api/workouts', {
         headers: {
           'Authorization': `Bearer ${user.token}`
         }
