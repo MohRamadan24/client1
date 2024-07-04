@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
 import { useAuthContext } from '../hooks/useAuthContext'
-import { API_URLS } from './apiUrls';
+import { API_URLS } from '../utils/apiUrls'
 
 const WorkoutForm = () => {
     const { dispatch } = useWorkoutsContext()
