@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
 import { useAuthContext } from '../hooks/useAuthContext'
+import { API_URLS } from './apiUrls';
 
 const WorkoutForm = () => {
     const { dispatch } = useWorkoutsContext()
@@ -22,7 +23,7 @@ const WorkoutForm = () => {
 
         const workout = {title, load, reps}
 
-        const response = await fetch('https://server1-9blggpmkw-tinitymerge-devs-projects.vercel.app/api/workouts', {
+        const response = await fetch(API_URLS.postWorkout, {
             method: 'POST',
             body: JSON.stringify(workout),
             headers:  {

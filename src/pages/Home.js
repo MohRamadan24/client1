@@ -5,6 +5,7 @@ import { useAuthContext } from "../hooks/useAuthContext"
 // components
 import WorkoutDetails from "../components/WorkoutDetails"
 import WorkoutForm from "../components/WorkoutForm" 
+import { API_URLS } from "../utils/apiUrls"
 
 const Home = () => {
   // const [workouts, setWorkouts] = useState(null)
@@ -13,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-        const response = await fetch('https://server1-9blggpmkw-tinitymerge-devs-projects.vercel.app/api/workouts', {
+        const response = await fetch(API_URLS.getWorkouts, {
         headers: {
           'Authorization': `Bearer ${user.token}`
         }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
+import { API_URLS } from "../utils/apiUrls";
 
 export const useSignup = () => {
     const [error, setError] = useState(null)
@@ -10,7 +11,7 @@ export const useSignup = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('https://server1-9blggpmkw-tinitymerge-devs-projects.vercel.app/api/user/signup', {
+        const response = await fetch(API_URLS.Signup, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({email, password})

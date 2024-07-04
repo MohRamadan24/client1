@@ -2,6 +2,7 @@ import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
 import { useAuthContext } from "../hooks/useAuthContext" 
 // date fns
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
+import { API_URLS } from './apiUrls';
 
 const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutsContext()
@@ -12,7 +13,7 @@ const WorkoutDetails = ({ workout }) => {
     if(!user) {
       return
     }
-    const response = await  fetch('https://server1-9blggpmkw-tinitymerge-devs-projects.vercel.app/api/workouts/' + workout._id, {
+    const response = await fetch(`${API_URLS.deleteWorkout}${workout._id}`, {
       method: 'DELETE',
       headers:  {
         'Authorization': `Bearer ${user.token}`
