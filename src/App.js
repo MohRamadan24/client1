@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Navbar from './components/Navbar'
+import Navbar2 from './components/Navbar2'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <Navbar2 />
         <div className="pages">
           <Routes>
             <Route 
