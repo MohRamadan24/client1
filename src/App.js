@@ -6,8 +6,10 @@ import Splash from './pages/Splash'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import Navbar2 from './components/Navbar2'
+
+import './utils/iconLibrary';  // Import the icon library configuration
 
 function App() {
 
