@@ -8,25 +8,25 @@ const Splash = () => {
                 <br />
                 <p className="text-sm text-white text-center font-light">SHAPE YOUR BODY WELL.</p>
             </div>
-            <div className="flex h-[690px] w-full py-[120px] flex-col justify-between">
+            <div className="flex h-auto w-full pt-[120px] pb-[40px] flex-col justify-between">
                 <div className="flex justify-center flex-col items-center">
                     <p className="font-bold text-4xl tracking-wide leading-relaxed">We care about what we offer</p>
-                    <p className="text-sm font-light">Who are in extremely love with eco friendly system.</p>
+                    <p className="text-sm font-light mb-16">Who are in extremely love with eco friendly system.</p>
                 </div>
-                <div className="flex h-auto w-full flex-row justify-center">
-                    <div className="flex flex-col items-center h-[300px] w-[350px] mx-[15px] rounded-[10px] shadow-shadowCard py-[40px] px-[30px]">
+                <div className="flex flex-wrap h-auto w-full flex-row justify-center">
+                    <div className="flex flex-col items-center h-[300px] w-[350px] mx-[15px] rounded-[10px] shadow-shadowCard py-[40px] px-[30px] mb-[80px]">
                         <div className="flex h-[50px] w-full bg-icon1 bg-no-repeat bg-center">
                         </div>
                         <p className="flex justify-center h-auto w-full pt-[30px] pb-[20px] text-xl font-bold">Regular Exercise</p>
                         <p className="h-auto w-full mb-[16px] font-extralight text-base text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
                     </div>
-                    <div className="flex flex-col items-center h-[300px] w-[350px] mx-[15px] rounded-[10px] shadow-shadowCard py-[40px] px-[30px]">
+                    <div className="flex flex-col items-center h-[300px] w-[350px] mx-[15px] rounded-[10px] shadow-shadowCard py-[40px] px-[30px] mb-[80px]">
                         <div className="flex h-[50px] w-full bg-icon2 bg-no-repeat bg-center">
                         </div>
                         <p className="flex justify-center h-auto w-full pt-[30px] pb-[20px] text-xl font-bold">Regular Exercise</p>
                         <p className="h-auto w-full mb-[16px] font-extralight text-base text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
                     </div>
-                    <div className="flex flex-col items-center h-[300px] w-[350px] mx-[15px] rounded-[10px] shadow-shadowCard py-[40px] px-[30px]">
+                    <div className="flex flex-col items-center h-[300px] w-[350px] mx-[15px] rounded-[10px] shadow-shadowCard py-[40px] px-[30px] mb-[80px]">
                         <div className="flex h-[50px] w-full bg-icon3 bg-no-repeat bg-center">
                         </div>
                         <p className="flex justify-center h-auto w-full pt-[30px] pb-[20px] text-xl font-bold">Regular Exercise</p>
@@ -37,16 +37,336 @@ const Splash = () => {
             <div className="flex justify-center h-auto w-full bg-[#F6214A]">
                 <div className="flex items-center flex-col py-[100px] w-[1110px]">
                     <div className="flex flex-col items-center px-[15px] pb-[70px]">
-                        <p className="font-bold text-4xl text-white pb-[15px]">Calculate Your Body Mass Index</p>
-                        <p className="font-light text-sm text-white">Who are in extremely love with eco friendly system.</p>
+                        <p className="font-bold text-4xl text-white pb-[15px] text-center">Calculate Your Body Mass Index</p>
+                        <p className="font-light text-sm text-white text-center">Who are in extremely love with eco friendly system.</p>
                     </div>
-                    <div className="h-auto w-full">
-                        <div className="flex h-[48px] w-1/3"></div>
-                        <div className="flex h-[48px] w-1/3"></div>
-                        <div className="flex h-[48px] w-1/3"></div>
+                    <div className="flex flex-row flex-wrap h-auto w-full justify-center">
+                        <div className="flex h-[64px] w-[285px] px-[15px]">
+                            <input className="h-[44px] w-full p-[12px] mb-[20px] border border-[#f96481] bg-transparent placeholder-white text-xs text-white" type="text" placeholder="Your Height (Inches)" />
+                        </div>
+                        <div className="flex h-[64px] w-[285px] px-[15px]">
+                            <input className="h-[44px] w-full p-[12px] mb-[20px] border border-[#f96481] bg-transparent placeholder-white text-xs text-white" type="text" placeholder="Your Weight (lbs)" />
+                        </div>
+                        <div className="flex h-[64px] w-[285px] px-[15px]">
+                            <button className="flex justify-center items-center h-auto w-full mb-[20px] px-[30px] rounded-full bg-white text-sm font-medium">CALCULATE YOUR BMI</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div className="flex justify-center py-[120px] h-auto w-full">
+                <div className="flex flex-col items-center h-auto w-[1140px] px-[15px]">
+                    <div className="flex h-auto w-auto md:w-[855px]">
+                        <div className="flex h-auto w-full px-[15px] pb-[70px]">
+                            <div className="flex flex-col justify-center h-auto w-full">
+                                <p className="font-bold text-4xl tracking-wide leading-relaxed text-center">Top Courses That are open for Students</p>
+                                <p className="text-sm font-light text-center">Who are in extremely love with eco friendly system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex justify-center h-auto w-full flex-wrap">
+                        <div className="h-auto w-[370px]">
+                            <div className="relative h-auto w-full pb-[50px] px-[15px]">
+                                <div className="h-auto w-auto overflow-hidden">
+                                    <img className="block w-full hover:scale-110 ease-in-out duration-300" src="https://themewagon.github.io/gym/img/c1.jpg" alt="" />
+                                </div>
+                                <div className="h-auto w-max py-[10px] px-[40px] ml-[20px] mt-[-60px] bg-[#f6214b] z-10 text-white relative">Course Available</div>
+                                <a className="flex justify-between items-center " href="/#">
+                                    <p className="py-[20px] text-lg font-semibold">Running Classes</p>
+                                    <p className="text-lg font-semibold text-[#f6214b]">$275</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="h-auto w-[370px]">
+                            <div className="relative h-auto w-full pb-[50px] px-[15px]">
+                                <div className="h-auto w-auto overflow-hidden">
+                                    <img className="block w-full hover:scale-110 ease-in-out duration-300" src="https://themewagon.github.io/gym/img/c1.jpg" alt="" />
+                                </div>
+                                <div className="h-auto w-max py-[10px] px-[40px] ml-[20px] mt-[-60px] bg-[#f6214b] z-10 text-white relative">Course Available</div>
+                                <a className="flex justify-between items-center " href="/#">
+                                    <p className="py-[20px] text-lg font-semibold">Running Classes</p>
+                                    <p className="text-lg font-semibold text-[#f6214b]">$275</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="h-auto w-[370px]">
+                            <div className="relative h-auto w-full pb-[50px] px-[15px]">
+                                <div className="h-auto w-auto overflow-hidden">
+                                    <img className="block w-full hover:scale-110 ease-in-out duration-300" src="https://themewagon.github.io/gym/img/c1.jpg" alt="" />
+                                </div>
+                                <div className="h-auto w-max py-[10px] px-[40px] ml-[20px] mt-[-60px] bg-[#f6214b] z-10 text-white relative">Course Available</div>
+                                <a className="flex justify-between items-center " href="/#">
+                                    <p className="py-[20px] text-lg font-semibold">Running Classes</p>
+                                    <p className="text-lg font-semibold text-[#f6214b]">$275</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="h-auto w-[370px]">
+                            <div className="relative h-auto w-full pb-[50px] px-[15px]">
+                                <div className="h-auto w-auto overflow-hidden">
+                                    <img className="block w-full hover:scale-110 ease-in-out duration-300" src="https://themewagon.github.io/gym/img/c1.jpg" alt="" />
+                                </div>
+                                <div className="h-auto w-max py-[10px] px-[40px] ml-[20px] mt-[-60px] bg-[#f6214b] z-10 text-white relative">Course Available</div>
+                                <a className="flex justify-between items-center " href="/#">
+                                    <p className="py-[20px] text-lg font-semibold">Running Classes</p>
+                                    <p className="text-lg font-semibold text-[#f6214b]">$275</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="h-auto w-[370px]">
+                            <div className="relative h-auto w-full pb-[50px] px-[15px]">
+                                <div className="h-auto w-auto overflow-hidden">
+                                    <img className="block w-full hover:scale-110 ease-in-out duration-300" src="https://themewagon.github.io/gym/img/c1.jpg" alt="" />
+                                </div>
+                                <div className="h-auto w-max py-[10px] px-[40px] ml-[20px] mt-[-60px] bg-[#f6214b] z-10 text-white relative">Course Available</div>
+                                <a className="flex justify-between items-center " href="/#">
+                                    <p className="py-[20px] text-lg font-semibold">Running Classes</p>
+                                    <p className="text-lg font-semibold text-[#f6214b]">$275</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="h-auto w-[370px]">
+                            <div className="relative h-auto w-full pb-[50px] px-[15px]">
+                                <div className="h-auto w-auto overflow-hidden">
+                                    <img className="block w-full hover:scale-110 ease-in-out duration-300" src="https://themewagon.github.io/gym/img/c1.jpg" alt="" />
+                                </div>
+                                <div className="h-auto w-max py-[10px] px-[40px] ml-[20px] mt-[-60px] bg-[#f6214b] z-10 text-white relative">Course Available</div>
+                                <a className="flex justify-between items-center " href="/#">
+                                    <p className="py-[20px] text-lg font-semibold">Running Classes</p>
+                                    <p className="text-lg font-semibold text-[#f6214b]">$275</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-col h-auto w-full xl:flex-row">
+                <div className="flex flex-col items-center h-auto w-full md:flex-row xl:w-1/2 bg-[#222222]">
+                    <div className="flex flex-col h-auto w-full md:flex-row xl:w-1/2 bg-[#444444]">
+                        <img className="h-max w-full" src="https://themewagon.github.io/gym/img/f1.jpg" alt="" />
+                    </div>
+                    <div className="flex flex-col h-auto w-full xl:w-1/2 bg-[#222222] p-16">
+                        <p className="text-white font-thin text-base mb-[15px]">BASIC & COMMON REPAIRS</p>
+                        <p className="text-[#f6214b] font-bold text-4xl mb-[15px]">Basic Revolutions</p>
+                        <p className="text-[#777777] font-extralight text-base">Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical.</p>
+                    </div>
+                </div>
+                <div className="flex flex-col items-center h-auto w-full md:flex-row xl:w-1/2 bg-[#222222]">
+                    <div className="flex flex-col h-auto w-full md:flex-row xl:w-1/2 bg-[#222222]">
+                        <img className="h-max w-full" src="https://themewagon.github.io/gym/img/f2.jpg" alt="" />
+                    </div>
+                    <div className="flex flex-col h-auto w-full xl:w-1/2 bg-[#222222] p-16">
+                        <p className="text-white font-thin text-base mb-[15px]">BASIC & COMMON REPAIRS</p>
+                        <p className="text-[#f6214b] font-bold text-4xl mb-[15px]">Basic Revolutions</p>
+                        <p className="text-[#777777] font-extralight text-base">Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical.</p>
+                    </div>
+                </div>
+            </div>
+            <div className="flex justify-center py-[120px] h-auto w-full">
+                <div className="flex flex-col items-center h-auto w-[1140px] px-[15px]">
+                    <div className="flex h-auto w-auto md:w-[855px]">
+                        <div className="flex h-auto w-full px-[15px] pb-[70px]">
+                            <div className="flex flex-col justify-center h-auto w-full">
+                                <p className="font-bold text-4xl tracking-wide leading-relaxed text-center">Schedule your Fitness Process</p>
+                                <p className="text-sm font-light text-center">Who are in extremely love with eco friendly system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex justify-center h-auto w-full flex-wrap">
+                        <table class="h-auto w-auto table-auto">
+                            <thead className="">
+                                <tr className="bg-[#e9ecef]">
+                                    <th className="h-[50px] w-[140px] md:w-[230px] xl:w-[290px] text-sm font-black border">COURSE NAME</th>
+                                    <th className="h-[50px] w-[60px] md:w-[90px] xl:w-[160px] text-sm font-black border">MON</th>
+                                    <th className="h-[50px] w-[60px] md:w-[90px] xl:w-[160px] text-sm font-black border">TUE</th>
+                                    <th className="h-[50px] w-[60px] md:w-[90px] xl:w-[160px] text-sm font-black border">WED</th>
+                                    <th className="h-[50px] w-[60px] md:w-[90px] xl:w-[160px] text-sm font-black border">THU</th>
+                                    <th className="h-[50px] w-[60px] md:w-[90px] xl:w-[160px] text-sm font-black border">FRI</th>
+                                </tr>
+                            </thead>
+                            <tbody className="">
+                                <tr className="hover:bg-[#f6214b] hover:text-white">
+                                    <td className="justify-center text-center font-thin text-sm border">Fitness Aero</td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center mb-[5px]">10.00</p>
+                                        <p className="font-thin text-sm text-center mb-[5px]">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                </tr>
+                                <tr className="hover:bg-[#f6214b] hover:text-white">
+                                    <td className="justify-center text-center font-thin text-sm border">Senior Fitness</td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                </tr>
+                                <tr className="hover:bg-[#f6214b] hover:text-white">
+                                    <td className="justify-center text-center font-thin text-sm border">Fitness Aero</td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                </tr>
+                                <tr className="hover:bg-[#f6214b] hover:text-white">
+                                    <td className="justify-center text-center font-thin text-sm border">Senior Fitness</td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                </tr>
+                                <tr className="hover:bg-[#f6214b] hover:text-white">
+                                    <td className="justify-center text-center font-thin text-sm border">Senior Fitness</td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                </tr>
+                                <tr className="hover:bg-[#f6214b] hover:text-white">
+                                    <td className="justify-center text-center font-thin text-sm border">Senior Fitness</td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                    <td className="py-[10px] border">
+                                        <p className="font-thin text-sm text-center">10.00</p>
+                                        <p className="font-thin text-sm text-center">02.00</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div className="flex justify-center py-[120px] h-auto w-full bg-[#f9f9ff]">
+                <div className="flex flex-col items-center h-auto w-[1140px] px-[15px] bg-slate-300">
+                    <div className="flex h-auto w-auto md:w-[855px]">
+                        <div className="flex h-auto w-full px-[15px] pb-[70px]">
+                            <div className="flex flex-col justify-center h-auto w-full">
+                                <p className="font-bold text-4xl tracking-wide leading-relaxed text-center">Our Experienced Trainers</p>
+                                <p className="text-sm font-light text-center">Who are in extremely love with eco friendly system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex justify-center h-auto w-full flex-wrap">
+                        <div className="flex flex-wrap justify-center h-auto w-full">
+                            <div className="h-auto w-[235px] px-[15px] pb-[50px]">
+                                <div className="h-[230px] w-full group">
+                                    <img className="block" src="https://themewagon.github.io/gym/img/t2.jpg" alt="" />
+                                    <div className="h-[230px] w-full bg-red-300 mt-[-235px] relative hidden .group-hover"></div>
+                                </div>
+                                <p className="text-lg text-center font-semibold mt-[20px]">Rodney Cooper</p>
+                                <p className="text-sm text-[#777776] text-center mb-[20px]">Creative Art Director (Project)</p>
+                            </div>
+                            <div className="h-auto w-[235px] px-[15px] pb-[50px]">
+                                <img className="" src="https://themewagon.github.io/gym/img/t2.jpg" alt="" />
+                                <p className="text-lg text-center font-semibold mt-[20px]">Rodney Cooper</p>
+                                <p className="text-sm text-[#777776] text-center mb-[20px]">Creative Art Director (Project)</p>
+                            </div>
+                            <div className="h-auto w-[235px] px-[15px] pb-[50px]">
+                                <img className="" src="https://themewagon.github.io/gym/img/t2.jpg" alt="" />
+                                <p className="text-lg text-center font-semibold mt-[20px]">Rodney Cooper</p>
+                                <p className="text-sm text-[#777776] text-center mb-[20px]">Creative Art Director (Project)</p>
+                            </div>
+                            <div className="h-auto w-[235px] px-[15px] pb-[50px]">
+                                <img className="" src="https://themewagon.github.io/gym/img/t2.jpg" alt="" />
+                                <p className="text-lg text-center font-semibold mt-[20px]">Rodney Cooper</p>
+                                <p className="text-sm text-[#777776] text-center mb-[20px]">Creative Art Director (Project)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="h-[1000px] w-full bg-lime-200"></div>
         </div>
     );
 }
