@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 // import Navbar from './components/Navbar'
 import Navbar2 from './components/Navbar2'
+import Footer from './components/Footer'
 
 import './utils/iconLibrary';  // Import the icon library configuration
 
@@ -39,6 +40,7 @@ function App() {
             />
           </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );

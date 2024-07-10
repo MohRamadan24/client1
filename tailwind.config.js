@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'splash-banner': "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/assets/images/splash-banner.jpg')",
+        'banner-2': "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://themewagon.github.io/gym/img/callto-bg.jpg')",
         'icon1': "url('../public/assets/images/o1.png')",
         'icon2': "url('../public/assets/images/o2.png')",
         'icon3': "url('../public/assets/images/o3.png')"

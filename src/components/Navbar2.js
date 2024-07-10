@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Navbar2 = () => {
 
   return (
-    <header className="flex w-full h-auto fixed flex-wrap flex-col">
+    <header className="flex w-full h-auto fixed flex-wrap flex-col z-40">
       <div className="flex w-full h-20 bg-white justify-between z-10 md:justify-center" dir="ltr">
         <div className="flex flex-col justify-between w-[7vw] h-full p-5 md:w-96">
           <p className="text-sm font-medium invisible md:visible">We believe we helps people</p>
