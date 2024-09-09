@@ -6,8 +6,10 @@ import Splash from './pages/Splash'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import Cv from './pages/Cv'
 // import Navbar from './components/Navbar'
 import Navbar2 from './components/Navbar2'
+import Navbar3 from './components/Navbar3'
 import Footer from './components/Footer'
 
 import './utils/iconLibrary';  // Import the icon library configuration
@@ -25,6 +27,10 @@ function App() {
             <Route 
               path="/" 
               element={<Splash />} 
+            />
+            <Route 
+              path="/cv" 
+              element={<Cv />} 
             />
             <Route 
               path="/dashboard" 
