@@ -9,8 +9,11 @@ import Signup from './pages/Signup'
 import Cv from './pages/Cv'
 // import Navbar from './components/Navbar'
 import Navbar2 from './components/Navbar2'
-import Navbar3 from './components/Navbar3'
+import NavbarCV from './components/NavbarCV'
 import Footer from './components/Footer'
+import NavbarBlog from './components/NavbarBlog'
+import Blog from './pages/HomeBlog'
+import FooterBlog from './components/FooterBlog'
 
 import './utils/iconLibrary';  // Import the icon library configuration
 
@@ -21,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar3 />
+        <NavbarBlog />
         <div className="pages">
           <Routes>
             <Route 
@@ -31,6 +34,10 @@ function App() {
             <Route 
               path="/cv" 
               element={<Cv />} 
+            />
+            <Route 
+              path="/blog" 
+              element={<Blog />} 
             />
             <Route 
               path="/dashboard" 
@@ -46,7 +53,7 @@ function App() {
             />
           </Routes>
         </div>
-        <Footer />
+        <FooterBlog />
       </BrowserRouter>
     </div>
   );
