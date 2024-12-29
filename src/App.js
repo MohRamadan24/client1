@@ -14,6 +14,7 @@ import Footer from './components/Footer'
 import NavbarBlog from './components/NavbarBlog'
 import Blog from './pages/HomeBlog'
 import FooterBlog from './components/FooterBlog'
+import Admin from './pages/Admin'
 
 import './utils/iconLibrary';  // Import the icon library configuration
 
@@ -30,6 +31,10 @@ function App() {
             <Route 
               path="/" 
               element={<Splash />} 
+            />
+            <Route 
+              path="/Admin" 
+              element={<Admin />} 
             />
             <Route 
               path="/cv" 
@@ -53,7 +58,7 @@ function App() {
             />
           </Routes>
         </div>
-        <FooterBlog />
+        {/* <FooterBlog /> */}
       </BrowserRouter>
     </div>
   );
