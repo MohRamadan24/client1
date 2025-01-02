@@ -38,132 +38,229 @@ const Admin = () => {
   
    useEffect(() => {
    const options = {
-// set the labels option to true to show the labels on the X and Y axis
-   xaxis: {
-      show: true,
-      categories: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-      labels: {
-      show: true,
-         style: {
-            fontFamily: "Inter, sans-serif",
-            cssClass: 'text-xs font-normal fill-gray-500 dark:fill-gray-400'
-         }
-      },
-      axisBorder: {
-         show: false,
-      },
-      axisTicks: {
-         show: false,
-      },
-   },
-   yaxis: {
-      show: true,
-      tickAmount: 2,
-      labels: {
+   // set the labels option to true to show the labels on the X and Y axis
+      xaxis: {
          show: true,
-         style: {
-            fontFamily: "Inter, sans-serif",
-            cssClass: 'text-xs font-normal fill-gray-500 dark:fill-gray-400'
+         categories: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+         labels: {
+         show: true,
+            style: {
+               fontFamily: "Inter, sans-serif",
+               cssClass: 'text-xs font-normal fill-gray-500 dark:fill-gray-400'
+            }
          },
-         
-         formatter: function (value) {
-            return '' + value;
+         axisBorder: {
+            show: false,
+         },
+         axisTicks: {
+            show: false,
+         },
+      },
+      yaxis: {
+         show: true,
+         tickAmount: 2,
+         labels: {
+            show: true,
+            style: {
+               fontFamily: "Inter, sans-serif",
+               cssClass: 'text-xs font-normal fill-gray-500 dark:fill-gray-400'
+            },
+            
+            formatter: function (value) {
+               return '' + value;
+            }
          }
-      }
-   },
-   series: [
-      {
-         name: "Developer Edition",
-         data: [1, 3, 1, 4, 2, 4],
-         color: "#1A56DB",
       },
-      {
-         name: "Designer Edition",
-         data: [4, 2, 4, 1, 3, 1],
-         color: "#7E3BF2",
+      series: [
+         {
+            name: "Developer Edition",
+            data: [1, 3, 1, 4, 2, 4],
+            color: "#1A56DB",
+         },
+         {
+            name: "Designer Edition",
+            data: [4, 2, 4, 1, 3, 1],
+            color: "#7E3BF2",
+         },
+      ],
+      chart: {
+         sparkline: {
+            enabled: false
+         },
+         height: 150,
+         width: "100%",
+         type: "area",
+         fontFamily: "Inter, sans-serif",
+         dropShadow: {
+            enabled: false,
+         },
+         toolbar: {
+            show: false,
+         },
       },
-   ],
-   chart: {
-      sparkline: {
-         enabled: false
+      
+      fill: {
+         type: "gradient",
+         gradient: {
+            opacityFrom: 0.55,
+            opacityTo: 0,
+            shade: "#1C64F2",
+            gradientToColors: ["#1C64F2"],
+         },
       },
-      height: 150,
-      width: "100%",
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      dropShadow: {
+      dataLabels: {
          enabled: false,
       },
-      toolbar: {
+      stroke: {
+         width: 6,
+      },
+      legend: {
          show: false,
       },
-   },
-   
-   fill: {
-      type: "gradient",
-      gradient: {
-         opacityFrom: 0.55,
-         opacityTo: 0,
-         shade: "#1C64F2",
-         gradientToColors: ["#1C64F2"],
+      grid: {
+         show: true,
       },
-   },
-   dataLabels: {
-      enabled: false,
-   },
-   stroke: {
-      width: 6,
-   },
-   legend: {
-      show: false,
-   },
-   grid: {
-      show: true,
-   },
-}
+   }
+
    if (document.getElementById("labels-chart") && typeof ApexCharts !== 'undefined') {
    const chart = new ApexCharts(document.getElementById("labels-chart"), options);
    chart.render();
 
-
       // Cleanup the chart on component unmount
       return () => {
-      //   chart.destroy();
+        chart.destroy();
       };
+
     }
-  }, []);
+   }, []);
+
+   useEffect(() => {
+      const options2 = {
+      // set the labels option to true to show the labels on the X and Y axis
+         series: [45, 55],
+         colors: ["#1C64F2", "#16BDCA", "#FDBA8C", "#E74694"],
+         chart: {
+         height: 100,
+         width: 100,
+         type: "donut",
+         },
+         stroke: {
+         colors: ["transparent"],
+         lineCap: "",
+         },
+         plotOptions: {
+         pie: {
+            donut: {
+               labels: {
+                  show: true,
+                  total: {
+                    showAlways: true,
+                    show: true,
+                  },
+                },
+               size: "93%",
+            },
+         },
+         },
+         grid: {
+         padding: {
+            top: -2,
+         },
+         },
+         labels: ["Direct", "Sponsor", "Affiliate", "Email marketing"],
+         dataLabels: {
+         enabled: false,
+         },
+         legend: {
+            show: false,
+         },
+         yaxis: {
+         labels: {
+            formatter: function (value) {
+               return value + "k"
+            },
+         },
+         },
+         xaxis: {
+         labels: {
+            formatter: function (value) {
+               return value  + "k"
+            },
+         },
+         axisTicks: {
+            show: false,
+         },
+         axisBorder: {
+            show: false,
+         },
+         },
+      }
+
+      if (document.getElementById("donut-chart") && typeof ApexCharts !== 'undefined') {
+
+         const chart = new ApexCharts(document.getElementById("donut-chart"), options2);
+         chart.render();
+   
+         // Cleanup the chart on component unmount
+         return () => {
+           chart.destroy();
+         };
+   
+       }
+      }, []);
 
 
   return (
     <div>
+      {/* <!-- Main modal --> */}
+      <div id="navbar-search" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+         <div class="relative p-4  mt-0 w-full max-w-2xl max-h-full">
+            {/* <!-- Modal content --> */}
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                  {/* <!-- Modal body --> */}
+                  <div class="p-4 md:p-5 space-y-4">
+                     <div class="relative md:hidden">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-4 pointer-events-none">
+                           <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                           </svg>
+                        </div>   
+                        <input type="text" id="search-navbar" class="block w-full pr-5 py-3 ps-12 text-xl text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..."/>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </div>
       {/* Navbar */}
          <nav class="fixed top-0 z-40 w-full xl:pl-64 bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
          <div class="px-5 py-5">
             <div class="flex items-center justify-between">
                <div class="flex items-center justify-start rtl:justify-end">
-               <div class="flex md:order-2 ">
+                  <div class="flex md:order-2 ">
+                     <a href="https://flowbite.com/" class="flex items-center p-2 xl:hidden">
+                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3 sm:h-10" alt="Flowbite Logo" />
+                     </a>
                      <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
                         <span class="sr-only">Open sidebar</span>
                         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                            <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
                         </svg>
                      </button>
-                     <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="mx-3 md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+                     <button type="button" data-modal-target="navbar-search" data-modal-toggle="navbar-search" class="mx-3 md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                         </svg>
                         <span class="sr-only">Search</span>
                      </button>
-                     <div class="relative hidden md:block mx-3">
+                     <div class="relative hidden mx-3 md:flex md:items-center">
                         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                        </svg>
-                        <span class="sr-only">Search icon</span>
+                           <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                           </svg>
+                           <span class="sr-only">Search icon</span>
                         </div>
                         <input type="text" id="search-navbar" class="block w-[300px] p-2 ps-11 text-md text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..."/>
-                     </div>
-                     
+                     </div> 
                   </div>
                </div>
                <div class="flex items-center">
@@ -421,14 +518,23 @@ const Admin = () => {
          </aside>
 
          <div class="flex flex-col min-[900px]:flex-row flex-wrap xl:ml-64">
-            <div class="p-5 border-2 w-full min-[900px]:max-w-[calc(100%-455px)] border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-[88px]">
-               <div class="grid grid-cols-1 gap-4 mb-4 ">
-                  
-                  
-                  <div class=" w-full bg-[#f5f5f7] rounded-lg shadow dark:bg-gray-800">
-                     <div class="flex justify-between p-4 md:p-6 pb-0 md:pb-0">
+            <div class="p-6 border-2 w-full min-[900px]:max-w-[calc(100%-455px)] border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-[88px]">
+               <div class="flex flex-col w-full min-[900px]:flex-row mb-4 gap-7">
+                  <div class="flex flex-col w-full min-[900px]:w-[220px] bg-[#f5f5f7] rounded-lg shadow dark:bg-gray-800 h-[245px] justify-between">
+                     <div class="flex flex-col justify-between p-4 md:p-4 pb-0 md:pb-0">
                         <div>
-                           <h5 class="leading-none text-xl font-bold text-gray-900 dark:text-white pb-2">$12,423</h5>
+                           {/* <h5 class="leading-none text-xl font-bold text-gray-900 dark:text-white pb-2">Activity</h5>  */}
+                           {/* <h5 class="leading-none text-3xl font-bold text-gray-900 dark:text-white pb-2">65</h5>   */}
+                        </div>
+                     </div>
+                     {/* <div id="labels-chart" class="mx-4 pr-2 pl-1 rounded-lg bg-white"></div> */}
+                     <div class="mx-4 pr-2 pl-1 rounded-lg bg-white" id="donut-chart"></div>
+                  </div>
+                  
+                  <div class="flex flex-col w-full bg-[#f5f5f7] rounded-lg shadow dark:bg-gray-800 h-[245px] justify-between">
+                     <div class="flex justify-between p-4 md:p-4 pb-0 md:pb-0">
+                        <div>
+                           <h5 class="leading-none text-xl font-bold text-gray-900 dark:text-white pb-2">Activity</h5>
                            {/* <p class="text-base font-normal text-gray-500 dark:text-gray-400">Sales this week</p> */}
                            
                         </div>
@@ -578,6 +684,10 @@ const Admin = () => {
                   </p>
                </div>
             </div>
+            
+
+
+
          <footer class="fixed bottom-0 left-0 z-20 w-full py-4 pr-4 pl-4 sm:pl-[272px] md:pl-[280px] bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:py-6 md:pr-6 dark:bg-gray-800 dark:border-gray-600">
                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
                </span>
