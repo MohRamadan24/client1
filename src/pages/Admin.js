@@ -87,7 +87,7 @@ const Admin = () => {
          sparkline: {
             enabled: false
          },
-         height: 150,
+         height: 165,
          width: "100%",
          type: "area",
          fontFamily: "Inter, sans-serif",
@@ -153,11 +153,35 @@ const Admin = () => {
             donut: {
                labels: {
                   show: true,
+                  name: {
+                    show: true,
+                    fontFamily: "Inter, sans-serif",
+                    offsetY: 20,
+                  },
                   total: {
                     showAlways: true,
                     show: true,
+                    label: "",
+                    fontFamily: "Inter, sans-serif",
+                  //   fontSize: "30px",
+                    formatter: function (w) {
+                      const sum = w.globals.seriesTotals.reduce((a, b) => {
+                        return b
+                      }, 0)
+                      return sum
+                    },
                   },
-                },
+                  value: {
+                     show: true,
+                     fontFamily: "Inter, sans-serif",
+                     offsetY: 5,
+                     fontSize: "8px",
+
+                    formatter: function (value) {
+                      return value + "k"
+                    },
+                  },
+               },
                size: "93%",
             },
          },
@@ -519,20 +543,24 @@ const Admin = () => {
 
          <div class="flex flex-col min-[900px]:flex-row flex-wrap xl:ml-64">
             <div class="p-6 border-2 w-full min-[900px]:max-w-[calc(100%-455px)] border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-[88px]">
-               <div class="flex flex-col w-full min-[900px]:flex-row mb-4 gap-7">
-                  <div class="flex flex-col w-full min-[900px]:w-[220px] bg-[#f5f5f7] rounded-lg shadow dark:bg-gray-800 h-[245px] justify-between">
-                     <div class="flex flex-col justify-between p-4 md:p-4 pb-0 md:pb-0">
-                        <div>
-                           {/* <h5 class="leading-none text-xl font-bold text-gray-900 dark:text-white pb-2">Activity</h5>  */}
-                           {/* <h5 class="leading-none text-3xl font-bold text-gray-900 dark:text-white pb-2">65</h5>   */}
-                        </div>
+               <div class="flex flex-col w-full 2xl:flex-row mb-4 gap-7">
+                  <div class="flex flex-row items-center w-full 2xl:w-[220px] h-[132px] 2xl:h-[264px] 2xl:flex-col bg-[#f5f5f7] shrink-0 rounded-lg shadow dark:bg-gray-800 justify-between">
+                     <div class="flex flex-col h-full 2xl:h-1/2 w-1/2 2xl:w-full justify-between px-4 md:px-4 py-6 items-center 2xl:items-start">                       
+                        <h5 class="leading-none text-xl font-bold text-gray-900 dark:text-white">Activity</h5> 
+                        <h5 class="leading-none text-3xl font-bold text-gray-900 dark:text-white">65</h5>  
                      </div>
                      {/* <div id="labels-chart" class="mx-4 pr-2 pl-1 rounded-lg bg-white"></div> */}
-                     <div class="mx-4 pr-2 pl-1 rounded-lg bg-white" id="donut-chart"></div>
+                     <div class="p-4 h-full 2xl:h-1/2 rounded-lg w-1/2 2xl:w-full flex gap-4">
+                        <div class="h-full w-1/2"id="donut-chart"></div>
+                        <div class="w-1/2 flex flex-col justify-center h-full">
+                           <p class="text-white text-xl">Task</p>
+                           <p class="text-[#8e92bc] text-lg">100</p>
+                        </div>
+                     </div>
                   </div>
                   
-                  <div class="flex flex-col w-full bg-[#f5f5f7] rounded-lg shadow dark:bg-gray-800 h-[245px] justify-between">
-                     <div class="flex justify-between p-4 md:p-4 pb-0 md:pb-0">
+                  <div class="flex flex-col w-full  bg-[#f5f5f7] rounded-lg shadow dark:bg-gray-800 justify-between">
+                     <div class="flex justify-between px-4 md:px-4 pt-6 pb-0 md:pb-0">
                         <div>
                            <h5 class="leading-none text-xl font-bold text-gray-900 dark:text-white pb-2">Activity</h5>
                            {/* <p class="text-base font-normal text-gray-500 dark:text-gray-400">Sales this week</p> */}
@@ -579,7 +607,7 @@ const Admin = () => {
                            </svg>
                         </div> */}
                      </div>
-                     <div id="labels-chart" class="m-4 pr-2 pl-1 rounded-lg bg-white"></div>
+                     <div id="labels-chart" class="m-4 pr-2 pl-1 rounded-lg bg-white pb-[-15px]"></div>
                   </div>
 
                   
