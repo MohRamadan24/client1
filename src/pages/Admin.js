@@ -283,147 +283,147 @@ const Admin = () => {
          </div>
       </div>
       {/* Navbar */}
-         <nav class="fixed top-0 z-40 w-full xl:pl-64 bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-         <div class="px-5 py-5">
-            <div class="flex items-center justify-between">
-               <div class="flex items-center justify-start rtl:justify-end">
-                  <div class="flex md:order-2 ">
-                     <a href="https://flowbite.com/" class="flex items-center p-2 xl:hidden">
-                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3 sm:h-10" alt="Flowbite Logo" />
-                     </a>
-                     <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                        <span class="sr-only">Open sidebar</span>
-                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                           <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-                        </svg>
-                     </button>
-                     <button type="button" data-modal-target="navbar-search" data-modal-toggle="navbar-search" class="mx-3 md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                        </svg>
-                        <span class="sr-only">Search</span>
-                     </button>
-                     <div class="relative hidden mx-3 md:flex md:items-center">
-                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                           <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+         <nav class="fixed top-0 z-40 w-full xl:pl-64 bg-white dark:bg-gray-800 dark:border-gray-700">
+            <div class="px-5 py-5">
+               <div class="flex items-center justify-between">
+                  <div class="flex items-center justify-start rtl:justify-end">
+                     <div class="flex md:order-2 ">
+                        <a href="https://flowbite.com/" class="flex items-center p-2 xl:hidden">
+                           <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3 sm:h-10" alt="Flowbite Logo" />
+                        </a>
+                        <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                           <span class="sr-only">Open sidebar</span>
+                           <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
                            </svg>
-                           <span class="sr-only">Search icon</span>
-                        </div>
-                        <input type="text" id="search-navbar" class="block w-[300px] p-2 ps-11 text-md text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..."/>
-                     </div> 
+                        </button>
+                        <button type="button" data-modal-target="navbar-search" data-modal-toggle="navbar-search" class="mx-3 md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+                           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                           </svg>
+                           <span class="sr-only">Search</span>
+                        </button>
+                        <div class="relative hidden mx-3 md:flex md:items-center">
+                           <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                              </svg>
+                              <span class="sr-only">Search icon</span>
+                           </div>
+                           <input type="text" id="search-navbar" class="block w-[300px] p-2 ps-11 text-md text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..."/>
+                        </div> 
+                     </div>
                   </div>
-               </div>
-               <div class="flex items-center">
-                  <div class="mx-0">
-                     <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                        <svg class="h-6 w-6 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
-                     </button>
-                     <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
-                        <ul class="py-2 font-medium" role="none">
+                  <div class="flex items-center">
+                     <div class="mx-0">
+                        <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                           <svg class="h-6 w-6 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
+                        </button>
+                        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
+                           <ul class="py-2 font-medium" role="none">
+                              <li>
+                                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                 <div class="inline-flex items-center">
+                                    <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>              
+                                    English (US)
+                                 </div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                 <div class="inline-flex items-center">
+                                    <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
+                                    Deutsch
+                                 </div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                 <div class="inline-flex items-center">
+                                    <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>              
+                                    Italiano
+                                 </div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                 <div class="inline-flex items-center">
+                                    
+                                    中文 (繁體)
+                                 </div>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="mx-0">
+                        <button
+                           id="theme-toggle"
+                           type="button"
+                           className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+                           onClick={handleThemeToggle}
+                        >
+                           <svg
+                              id="theme-toggle-dark-icon"
+                              className={`w-6 h-6 ${theme === 'dark' ? 'hidden' : ''}`}
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                           </svg>
+                           <svg
+                              id="theme-toggle-light-icon"
+                              className={`w-6 h-6 ${theme === 'light' ? 'hidden' : ''}`}
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              ></path>
+                           </svg>
+                        </button>
+                     </div>
+                     <div class="flex items-center mx-3">
+                        <div>
+                        <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                           <span class="sr-only">Open user menu</span>
+                           <img class="w-12 h-12 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo"/>
+                        </button>
+                        </div>
+                        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
+                        <div class="px-4 py-3" role="none">
+                           <p class="text-sm text-gray-900 dark:text-white" role="none">
+                              Neil Sims
+                           </p>
+                           <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
+                              neil.sims@flowbite.com
+                           </p>
+                        </div>
+                        <ul class="py-1" role="none">
                            <li>
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                              <div class="inline-flex items-center">
-                                 <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>              
-                                 English (US)
-                              </div>
-                              </a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Dashboard</a>
                            </li>
                            <li>
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                              <div class="inline-flex items-center">
-                                 <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
-                                 Deutsch
-                              </div>
-                              </a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Settings</a>
                            </li>
                            <li>
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                              <div class="inline-flex items-center">
-                                 <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>              
-                                 Italiano
-                              </div>
-                              </a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Earnings</a>
                            </li>
                            <li>
-                              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                              <div class="inline-flex items-center">
-                                 
-                                 中文 (繁體)
-                              </div>
-                              </a>
+                              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
                            </li>
                         </ul>
-                     </div>
-                  </div>
-                  <div class="mx-0">
-                     <button
-                        id="theme-toggle"
-                        type="button"
-                        className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
-                        onClick={handleThemeToggle}
-                     >
-                        <svg
-                           id="theme-toggle-dark-icon"
-                           className={`w-6 h-6 ${theme === 'dark' ? 'hidden' : ''}`}
-                           fill="currentColor"
-                           viewBox="0 0 20 20"
-                           xmlns="http://www.w3.org/2000/svg"
-                        >
-                           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                        </svg>
-                        <svg
-                           id="theme-toggle-light-icon"
-                           className={`w-6 h-6 ${theme === 'light' ? 'hidden' : ''}`}
-                           fill="currentColor"
-                           viewBox="0 0 20 20"
-                           xmlns="http://www.w3.org/2000/svg"
-                        >
-                           <path
-                           d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                           fillRule="evenodd"
-                           clipRule="evenodd"
-                           ></path>
-                        </svg>
-                     </button>
-                  </div>
-                  <div class="flex items-center mx-3">
-                     <div>
-                     <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
-                        <span class="sr-only">Open user menu</span>
-                        <img class="w-12 h-12 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo"/>
-                     </button>
-                     </div>
-                     <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
-                     <div class="px-4 py-3" role="none">
-                        <p class="text-sm text-gray-900 dark:text-white" role="none">
-                           Neil Sims
-                        </p>
-                        <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
-                           neil.sims@flowbite.com
-                        </p>
-                     </div>
-                     <ul class="py-1" role="none">
-                        <li>
-                           <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Dashboard</a>
-                        </li>
-                        <li>
-                           <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Settings</a>
-                        </li>
-                        <li>
-                           <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Earnings</a>
-                        </li>
-                        <li>
-                           <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
-                        </li>
-                     </ul>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
          </nav>
-
+         {/* Side Bar */}
          <aside id="logo-sidebar" class="fixed top-0 left-0 z-50 w-64 h-screen pt-5 pb-20 transition-transform -translate-x-full bg-white border-r border-gray-200 xl:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
             <a href="https://flowbite.com/" class="flex items-center mb-5 px-5 h-12">
                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3 sm:h-10" alt="Flowbite Logo" />
@@ -567,10 +567,12 @@ const Admin = () => {
                </div>
             </div>
          </aside>
-
+         {/* Parent Konten */}
          <div class="flex flex-col min-[900px]:flex-row flex-wrap xl:ml-64">
+            {/* Konten Kiri */}
             <div class="p-7 w-full min-[900px]:max-w-[calc(100%-455px)] bg-[#FCFCFC] mt-[88px]">
-               <div class="flex flex-col w-full 2xl:flex-row mb-10 gap-7">
+               {/* Container Grafik */}
+               <div class="flex flex-col w-full 2xl:flex-row mb-4 gap-7">
                   <div class="flex flex-row items-center w-full 2xl:w-[220px] h-[132px] 2xl:h-[264px] 2xl:flex-col bg-[#f5f5f7] shrink-0 rounded-lg shadow dark:bg-gray-800 justify-between">
                      <div class="flex flex-col h-full 2xl:h-1/2 w-1/2 2xl:w-full justify-between px-4 md:px-4 py-6 items-center 2xl:items-start">                       
                         <h5 class="leading-none text-xl font-bold text-gray-900 dark:text-white">Activity</h5> 
@@ -639,364 +641,526 @@ const Admin = () => {
 
                   
                </div>
-               <div class="flex items-center justify-center h-auto mb-4 rounded bg-gray-50 dark:bg-gray-800">
+               {/* Container Slider Task */}
+               <div class="flex items-center justify-center h-auto mb-7 rounded bg-[#FCFCFC] dark:bg-gray-800">
                   <div className="relative w-full overflow-hidden gap-7">
-                     <div class="w-full h-20 flex justify-end">
-                        <button className="transform h-16 w-12 p-2 rounded-full" onClick={slideLeft}>
-                        ❮
-                        </button>
-                        <button className="transform h-16 w-12 p-2 rounded-full" onClick={slideRight}>
-                        ❯
-                        </button>
+                     <div class="flex mb-4">
+                        <div class="w-1/2 h-auto flex items-center">
+                           <p class="text-3xl font-bold">Montly Mentors</p>
+                        </div>
+                        <div class="w-1/2 h-auto flex justify-end">
+                           <button className="transform h-16 w-12 p-2 rounded-full" onClick={slideLeft}>
+                           ❮
+                           </button>
+                           <button className="transform h-16 w-12 p-2 rounded-full" onClick={slideRight}>
+                           ❯
+                           </button>
+                        </div>
                      </div>
-                     <div ref={cardWrapperRef} className="flex transition-transform gap-7 duration-300 ease-in-out">
-                        <div class="flex-none w-full min-[1500px]:w-[calc(100%/2-24px)] p-4 bg-white rounded-xl dark:bg-gray-800">
+                     <div ref={cardWrapperRef} className="flex h-auto transition-transform gap-7 duration-300 ease-in-out">
+                        <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
                            <a href="#">
                               <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
-                           <div class="py-5">
+                           <div class="pt-3">
                               <a href="#">
-                                    <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
                               </a>
-                              <p class="mb-3 text-base font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                              <div class="w-full mb-7">
+                                 <div class="flex justify-between">
+                                    <p class="text-xl font-medium mb-3">Progress</p>
+                                    <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                                 </div>
+                                 <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                 </div>
+                              </div>
+                              <div class="flex items-center justify-between mb-2">
+                                 <div class="flex items-center ml-2">
+                                    <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                          <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                          <path d="M12 6v6l4 2"></path>
+                                       </g>
                                     </svg>
-                              </a>
-                              <div class="w-full">
-                                 <p class="text-xl font-bold">Progess</p>
-                                 <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-blue-600 w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                    <p class="text-lg font-[500]">3 Days Left</p>
+                                 </div>
+                                 <div class="flex -space-x-4 rtl:space-x-reverse">
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <div class="flex-none w-full min-[1500px]:w-[calc(100%/2-24px)] p-4 bg-white rounded-lg dark:bg-gray-800">
+                        <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
                            <a href="#">
-                              <img class="rounded-lg" src="assets/images/splash-banner.jpg" alt="" />
+                              <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
-                           <div class="py-5">
+                           <div class="pt-3">
                               <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
                               </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                              <div class="w-full mb-7">
+                                 <div class="flex justify-between">
+                                    <p class="text-xl font-medium mb-3">Progress</p>
+                                    <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                                 </div>
+                                 <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                 </div>
+                              </div>
+                              <div class="flex items-center justify-between mb-2">
+                                 <div class="flex items-center ml-2">
+                                    <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                          <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                          <path d="M12 6v6l4 2"></path>
+                                       </g>
                                     </svg>
-                              </a>
+                                    <p class="text-lg font-[500]">3 Days Left</p>
+                                 </div>
+                                 <div class="flex -space-x-4 rtl:space-x-reverse">
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="flex-none w-full min-[1500px]:w-[calc(100%/2-24px)] p-4 bg-white rounded-lg dark:bg-gray-800">
+                        <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
                            <a href="#">
-                              <img class="rounded-lg" src="assets/images/splash-banner.jpg" alt="" />
+                              <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
-                           <div class="py-5">
+                           <div class="pt-3">
                               <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
                               </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                              <div class="w-full mb-7">
+                                 <div class="flex justify-between">
+                                    <p class="text-xl font-medium mb-3">Progress</p>
+                                    <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                                 </div>
+                                 <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                 </div>
+                              </div>
+                              <div class="flex items-center justify-between mb-2">
+                                 <div class="flex items-center ml-2">
+                                    <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                          <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                          <path d="M12 6v6l4 2"></path>
+                                       </g>
                                     </svg>
-                              </a>
+                                    <p class="text-lg font-[500]">3 Days Left</p>
+                                 </div>
+                                 <div class="flex -space-x-4 rtl:space-x-reverse">
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="flex-none w-full min-[1500px]:w-[calc(100%/2-24px)] p-4 bg-white rounded-lg dark:bg-gray-800">
+                        <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
                            <a href="#">
-                              <img class="rounded-lg" src="assets/images/splash-banner.jpg" alt="" />
+                              <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
-                           <div class="py-5">
+                           <div class="pt-3">
                               <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
                               </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                              <div class="w-full mb-7">
+                                 <div class="flex justify-between">
+                                    <p class="text-xl font-medium mb-3">Progress</p>
+                                    <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                                 </div>
+                                 <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                 </div>
+                              </div>
+                              <div class="flex items-center justify-between mb-2">
+                                 <div class="flex items-center ml-2">
+                                    <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                          <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                          <path d="M12 6v6l4 2"></path>
+                                       </g>
                                     </svg>
-                              </a>
+                                    <p class="text-lg font-[500]">3 Days Left</p>
+                                 </div>
+                                 <div class="flex -space-x-4 rtl:space-x-reverse">
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="flex-none w-full min-[1500px]:w-[calc(100%/2-24px)] p-4 bg-white rounded-lg dark:bg-gray-800">
+                        <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
                            <a href="#">
-                              <img class="rounded-lg" src="assets/images/splash-banner.jpg" alt="" />
+                              <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
-                           <div class="py-5">
+                           <div class="pt-3">
                               <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
                               </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                              <div class="w-full mb-7">
+                                 <div class="flex justify-between">
+                                    <p class="text-xl font-medium mb-3">Progress</p>
+                                    <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                                 </div>
+                                 <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                 </div>
+                              </div>
+                              <div class="flex items-center justify-between mb-2">
+                                 <div class="flex items-center ml-2">
+                                    <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                          <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                          <path d="M12 6v6l4 2"></path>
+                                       </g>
                                     </svg>
-                              </a>
+                                    <p class="text-lg font-[500]">3 Days Left</p>
+                                 </div>
+                                 <div class="flex -space-x-4 rtl:space-x-reverse">
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="flex-none w-full min-[1500px]:w-[calc(100%/2-24px)] p-4 bg-white rounded-lg dark:bg-gray-800">
+                        <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
                            <a href="#">
-                              <img class="rounded-lg" src="assets/images/splash-banner.jpg" alt="" />
+                              <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
-                           <div class="py-5">
+                           <div class="pt-3">
                               <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
                               </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                              <div class="w-full mb-7">
+                                 <div class="flex justify-between">
+                                    <p class="text-xl font-medium mb-3">Progress</p>
+                                    <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                                 </div>
+                                 <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                 </div>
+                              </div>
+                              <div class="flex items-center justify-between mb-2">
+                                 <div class="flex items-center ml-2">
+                                    <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                          <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                          <path d="M12 6v6l4 2"></path>
+                                       </g>
                                     </svg>
-                              </a>
+                                    <p class="text-lg font-[500]">3 Days Left</p>
+                                 </div>
+                                 <div class="flex -space-x-4 rtl:space-x-reverse">
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="flex-none w-full min-[1500px]:w-[calc(100%/2-24px)] p-4 bg-white rounded-lg dark:bg-gray-800">
+                        <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
                            <a href="#">
-                              <img class="rounded-lg" src="assets/images/splash-banner.jpg" alt="" />
+                              <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
-                           <div class="py-5">
+                           <div class="pt-3">
                               <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
                               </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                              <div class="w-full mb-7">
+                                 <div class="flex justify-between">
+                                    <p class="text-xl font-medium mb-3">Progress</p>
+                                    <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                                 </div>
+                                 <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                 </div>
+                              </div>
+                              <div class="flex items-center justify-between mb-2">
+                                 <div class="flex items-center ml-2">
+                                    <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                          <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                          <path d="M12 6v6l4 2"></path>
+                                       </g>
                                     </svg>
-                              </a>
+                                    <p class="text-lg font-[500]">3 Days Left</p>
+                                 </div>
+                                 <div class="flex -space-x-4 rtl:space-x-reverse">
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="flex-none w-full min-[1500px]:w-[calc(100%/2-24px)] p-4 bg-white rounded-lg dark:bg-gray-800">
+                        <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
                            <a href="#">
-                              <img class="rounded-lg" src="assets/images/splash-banner.jpg" alt="" />
+                              <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
-                           <div class="py-5">
+                           <div class="pt-3">
                               <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
                               </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                              <div class="w-full mb-7">
+                                 <div class="flex justify-between">
+                                    <p class="text-xl font-medium mb-3">Progress</p>
+                                    <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                                 </div>
+                                 <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                 </div>
+                              </div>
+                              <div class="flex items-center justify-between mb-2">
+                                 <div class="flex items-center ml-2">
+                                    <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                          <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                          <path d="M12 6v6l4 2"></path>
+                                       </g>
                                     </svg>
-                              </a>
+                                    <p class="text-lg font-[500]">3 Days Left</p>
+                                 </div>
+                                 <div class="flex -space-x-4 rtl:space-x-reverse">
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="flex-none w-full min-[1500px]:w-[calc(100%/2-24px)] p-4 bg-white rounded-lg dark:bg-gray-800">
+                        <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
                            <a href="#">
-                              <img class="rounded-lg" src="assets/images/splash-banner.jpg" alt="" />
+                              <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
-                           <div class="py-5">
+                           <div class="pt-3">
                               <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
                               </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                              <div class="w-full mb-7">
+                                 <div class="flex justify-between">
+                                    <p class="text-xl font-medium mb-3">Progress</p>
+                                    <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                                 </div>
+                                 <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                 </div>
+                              </div>
+                              <div class="flex items-center justify-between mb-2">
+                                 <div class="flex items-center ml-2">
+                                    <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                          <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                          <path d="M12 6v6l4 2"></path>
+                                       </g>
                                     </svg>
-                              </a>
+                                    <p class="text-lg font-[500]">3 Days Left</p>
+                                 </div>
+                                 <div class="flex -space-x-4 rtl:space-x-reverse">
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="flex-none w-full min-[1500px]:w-[calc(100%/2-24px)] p-4 bg-white rounded-lg dark:bg-gray-800">
+                        <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
                            <a href="#">
-                              <img class="rounded-lg" src="assets/images/splash-banner.jpg" alt="" />
+                              <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
-                           <div class="py-5">
+                           <div class="pt-3">
                               <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
                               </a>
-                              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                              <div class="w-full mb-7">
+                                 <div class="flex justify-between">
+                                    <p class="text-xl font-medium mb-3">Progress</p>
+                                    <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                                 </div>
+                                 <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                                 </div>
+                              </div>
+                              <div class="flex items-center justify-between mb-2">
+                                 <div class="flex items-center ml-2">
+                                    <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                          <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                          <path d="M12 6v6l4 2"></path>
+                                       </g>
                                     </svg>
-                              </a>
+                                    <p class="text-lg font-[500]">3 Days Left</p>
+                                 </div>
+                                 <div class="flex -space-x-4 rtl:space-x-reverse">
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                    <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      
                      </div>
                   </div>
                </div>
-               {/* <div class="grid grid-cols-1">
-                  <div className="relative w-full overflow-hidden">
-                     <button
-                     className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-200 p-2 rounded-full"
-                     onClick={slideLeft}
-                     >
-                     ❮
-                     </button>
-                     <div
-                     ref={cardWrapperRef}
-                     className="flex transition-transform duration-300 ease-in-out"
-                     >
-                     <div className="flex-none w-1/2 p-4">
-                        <div className="bg-gray-100 rounded-lg shadow p-6 text-center">
-                           Card 1
+               {/* Container Table */}
+               <div class="flex items-center justify-center mb-4 rounded dark:bg-gray-800">
+                  <div class="relative overflow-x-auto sm:rounded-lg mb-10">
+                     {/* Filter dan Search Bar */}
+                     <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-7">
+                        <p class="text-3xl font-bold">Task Overview2</p>
+                        <div class="flex gap-5">
+                           <div class="flex items-center">
+                              <button id="dropdownRadioButton" data-dropdown-toggle="dropdownDefaultRadio" class="inline-flex items-center text-gray-500 bg-white border border-gray-200 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
+                                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 me-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                          <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm3.982 13.982a1 1 0 0 1-1.414 0l-3.274-3.274A1.012 1.012 0 0 1 9 10V6a1 1 0 0 1 2 0v3.586l2.982 2.982a1 1 0 0 1 0 1.414Z"/>
+                                       </svg>
+                                    Last 30 days
+                                    <svg class="w-4 h-4 ms-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="m1 1 4 4 4-4"/>
+                                    </svg>
+                              </button>
+                              {/* <!-- Dropdown menu --> */}
+                              <div id="dropdownDefaultRadio" class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
+                                 <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownRadioButton">
+                                    <li>
+                                    <div class="flex items-center">
+                                          <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                                          <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="flex items-center">
+                                          <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                                          <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="flex items-center">
+                                          <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                                          <label for="default-radio-3" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
+                                    </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                                 
+                           </div>
+                           <label for="table-search" class="sr-only">Search</label>
+                           <div class="relative">
+                                 <div class="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">
+                                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                                 </div>
+                                 <input type="text" id="table-search" class="block p-2 ps-10 text-sm text-gray-900 border border-gray-200 rounded-lg w-60  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for items"/>
+                           </div>
                         </div>
                      </div>
-                     <div className="flex-none w-1/2 p-4">
-                        <div className="bg-gray-100 rounded-lg shadow p-6 text-center">
-                           Card 2
-                        </div>
-                     </div>
-                     <div className="flex-none w-1/2 p-4">
-                        <div className="bg-gray-100 rounded-lg shadow p-6 text-center">
-                           Card 3
-                        </div>
-                     </div>
-                     <div className="flex-none w-1/2 p-4">
-                        <div className="bg-gray-100 rounded-lg shadow p-6 text-center">
-                           Card 4
-                        </div>
-                     </div>
-                     <div className="flex-none w-1/2 p-4">
-                        <div className="bg-gray-100 rounded-lg shadow p-6 text-center">
-                           Card 5
-                        </div>
-                     </div>
-                     </div>
-                     <button
-                     className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-200 p-2 rounded-full"
-                     onClick={slideRight}
-                     >
-                     ❯
-                     </button>
+                     <table class="w-full bg-white shadow-sm text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase  dark:bg-gray-700 dark:text-gray-400">
+                              <tr>
+                                 <th scope="col" class="p-4">
+                                    <div class="flex items-center">
+                                          <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                                          <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                    </div>
+                                 </th>
+                                 <th scope="col" class="px-6 py-3 text-base">
+                                    Product name
+                                 </th>
+                                 <th scope="col" class="px-6 py-3 text-base">
+                                    Color
+                                 </th>
+                                 <th scope="col" class="px-6 py-3 text-base">
+                                    Category
+                                 </th>
+                                 <th scope="col" class="px-6 py-3 text-base text-center">
+                                    Price
+                                 </th>
+                                 <th scope="col" class="px-6 py-3 text-base">
+                                    Price
+                                 </th>
+                                 <th scope="col" class="px-6 py-3 text-base">
+                                    Action
+                                 </th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                 <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                          <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                                          <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                 </td>
+                                 <th scope="row" class="min-w-[250px] text-base px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Apple MacBook Pro 17"
+                                 </th>
+                                 <td class="px-6 py-4 min-w-[200px]">
+                                    <div class="flex -space-x-4 rtl:space-x-reverse">
+                                       <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                       <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                       <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                       <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                    </div>
+                                 </td>
+                                 <td class="h-[64.5px] px-6 flex items-center justify-center">
+                                    <div class="text-base font-medium dark:text-white mr-4">43%</div>
+                                    <div class="w-[200px] bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+                                       <div class="bg-blue-600 h-2 rounded-full w-[43%]"></div>
+                                    </div>
+                                 </td>
+                                 <td class="px-6 py-4">
+                                    <div class="text-center w-[150px] h-[27px] bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">Dark</div>
+                                 </td>
+                                 <th scope="row" class="min-w-[100px] px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    2 Days
+                                 </th>
+                                 <td class="min-w-[100px] px-6 py-4">
+                                    <a href="#" class="font-medium text-base text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                 </td>
+                              </tr>
+                              
+                        </tbody>
+                     </table>
                   </div>
-               </div> */}
-               <div class="flex items-center justify-center mb-4 rounded bg-gray-50 dark:bg-gray-800">
-
-
-               <div class="relative overflow-x-auto sm:rounded-lg mb-10">
-                  <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4">
-                     <div>
-                        <button id="dropdownRadioButton" data-dropdown-toggle="dropdownDefaultRadio" class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-base px-3 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
-                              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 me-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm3.982 13.982a1 1 0 0 1-1.414 0l-3.274-3.274A1.012 1.012 0 0 1 9 10V6a1 1 0 0 1 2 0v3.586l2.982 2.982a1 1 0 0 1 0 1.414Z"/>
-                                 </svg>
-                              Last 30 days
-                              <svg class="w-4 h-4 ms-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                              </svg>
-                        </button>
-                        {/* <!-- Dropdown menu --> */}
-                        <div id="dropdownDefaultRadio" class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
-                           <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownRadioButton">
-                              <li>
-                              <div class="flex items-center">
-                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
-                              </div>
-                              </li>
-                              <li>
-                              <div class="flex items-center">
-                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
-                              </div>
-                              </li>
-                              <li>
-                              <div class="flex items-center">
-                                    <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                                    <label for="default-radio-3" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
-                              </div>
-                              </li>
-                           </ul>
-                        </div>
-                           
-                        </div>
-                        <label for="table-search" class="sr-only">Search</label>
-                        <div class="relative">
-                              <div class="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">
-                                 <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-                              </div>
-                              <input type="text" id="table-search" class="block p-2 ps-10 text-base text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for items"/>
-                        </div>
-                  </div>
-                  <table class="w-full bg-white shadow-sm text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                     <thead class="text-xs text-gray-700 uppercase  dark:bg-gray-700 dark:text-gray-400">
-                           <tr>
-                              <th scope="col" class="p-4">
-                                 <div class="flex items-center">
-                                       <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-                                       <label for="checkbox-all-search" class="sr-only">checkbox</label>
-                                 </div>
-                              </th>
-                              <th scope="col" class="px-6 py-3 text-base">
-                                 Product name
-                              </th>
-                              <th scope="col" class="px-6 py-3 text-base">
-                                 Color
-                              </th>
-                              <th scope="col" class="px-6 py-3 text-base">
-                                 Category
-                              </th>
-                              <th scope="col" class="px-6 py-3 text-base">
-                                 Price
-                              </th>
-                              <th scope="col" class="px-6 py-3 text-base">
-                                 Price
-                              </th>
-                              <th scope="col" class="px-6 py-3 text-base">
-                                 Action
-                              </th>
-                           </tr>
-                     </thead>
-                     <tbody>
-                           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                              <td class="w-4 p-4">
-                                 <div class="flex items-center">
-                                       <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-                                       <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                                 </div>
-                              </td>
-                              <th scope="row" class="min-w-[300px] text-base px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 Apple MacBook Pro 17"
-                              </th>
-                              <td class="px-6 py-4 min-w-[200px]">
-                                 <div class="flex -space-x-4 rtl:space-x-reverse">
-                                    <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
-                                    <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
-                                    <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
-                                    <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
-                                 </div>
-                              </td>
-                              <td class="px-6 py-4">
-                                 <div class="text-base font-medium dark:text-white">43%</div>
-                                 <div class="w-[250px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full w-[43%]"></div>
-                                 </div>
-                              </td>
-                              <td class="px-6 py-4">
-                                 <div class="text-center w-[150px] h-[27px] bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">Dark</div>
-                              </td>
-                              <th scope="row" class="min-w-[100px] px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                 2 Days
-                              </th>
-                              <td class="min-w-[100px] px-6 py-4">
-                                 <a href="#" class="font-medium text-base text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                              </td>
-                           </tr>
-                           
-                     </tbody>
-                  </table>
-               </div>
-
-
-
-
-
                </div>
                <div class="grid grid-cols-2 gap-4">
                   <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
@@ -1029,11 +1193,12 @@ const Admin = () => {
                   </div>
                </div>
             </div>
+            {/* Konten Kanan */}
             <div class="w-full min-[900px]:w-[455px] min-w-[455px] rounded-lg mt-[88px]">
 
                   <aside class="min-[900px]:fixed min-[900px]:h-[calc(100vh-88px-68px)] transition-transform bg-[#F5F5F7] border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                     <div class="h-full p-7 overflow-y-auto bg-white dark:bg-gray-800">
-                        <div class="p-6 max-w-sm bg-white rounded-lg shadow dark:bg-gray-800 ">
+                     <div class="h-full p-7 overflow-y-auto bg-[#F5F5F7] dark:bg-gray-800">
+                        <div class="p-6 max-w-sm bg-white rounded-lg dark:bg-gray-800 ">
                            <a href="#">
                               <img class="rounded-lg" src="assets/images/splash-banner.jpg" alt="" />
                            </a>
