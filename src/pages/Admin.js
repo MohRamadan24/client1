@@ -1,5 +1,6 @@
 import { useState, useEffect,useRef } from "react";
 import ApexCharts from "apexcharts";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Admin = () => {
 
@@ -138,7 +139,7 @@ const Admin = () => {
       const options2 = {
       // set the labels option to true to show the labels on the X and Y axis
          series: [45, 55],
-         colors: ["#1C64F2", "#16BDCA", "#FDBA8C", "#E74694"],
+         colors: ["#526CC0", "#2A2C3D"],
          chart: {
          height: 100,
          width: 100,
@@ -163,6 +164,9 @@ const Admin = () => {
                     show: true,
                     label: "",
                     fontFamily: "Inter, sans-serif",
+                    style: {
+                     color: "#373d3f", // Set the color using fill
+                 },
                   //   fontSize: "30px",
                     formatter: function (w) {
                       const sum = w.globals.seriesTotals.reduce((a, b) => {
@@ -176,15 +180,17 @@ const Admin = () => {
                      fontFamily: "Inter, sans-serif",
                      offsetY: 5,
                      fontSize: "8px",
-
-                    formatter: function (value) {
-                      return value + "k"
-                    },
+                     formatter: function (value) {
+                        return value + "k"
+                     },
                   },
                },
                size: "93%",
             },
          },
+         },
+         tooltip: {
+            enabled: false,
          },
          grid: {
          padding: {
@@ -573,10 +579,10 @@ const Admin = () => {
             <div class="p-7 w-full min-[900px]:max-w-[calc(100%-455px)] bg-[#FCFCFC] mt-[88px]">
                {/* Container Grafik */}
                <div class="flex flex-col w-full 2xl:flex-row mb-4 gap-7">
-                  <div class="flex flex-row items-center w-full 2xl:w-[220px] h-[132px] 2xl:h-[264px] 2xl:flex-col bg-[#f5f5f7] shrink-0 rounded-lg shadow dark:bg-gray-800 justify-between">
+                  <div class="flex flex-row items-center w-full 2xl:w-[220px] h-[132px] 2xl:h-[264px] 2xl:flex-col bg-[#141522] shrink-0 rounded-lg shadow dark:bg-gray-800 justify-between">
                      <div class="flex flex-col h-full 2xl:h-1/2 w-1/2 2xl:w-full justify-between px-4 md:px-4 py-6 items-center 2xl:items-start">                       
-                        <h5 class="leading-none text-xl font-bold text-gray-900 dark:text-white">Activity</h5> 
-                        <h5 class="leading-none text-3xl font-bold text-gray-900 dark:text-white">65</h5>  
+                        <h5 class="leading-none text-xl font-bold text-white dark:text-white">Running Task</h5> 
+                        <h5 class="leading-none text-3xl font-bold text-white dark:text-white">65</h5>  
                      </div>
                      {/* <div id="labels-chart" class="mx-4 pr-2 pl-1 rounded-lg bg-white"></div> */}
                      <div class="p-4 h-full 2xl:h-1/2 rounded-lg w-1/2 2xl:w-full flex gap-4">
@@ -1041,60 +1047,64 @@ const Admin = () => {
                      
                      </div>
                   </div>
+               
+               </div>
+               {/* Filter dan Search Bar */}
+               <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-7">
+                  <p class="text-3xl font-bold">Task Overview2</p>
+                  <div class="flex gap-5">
+                     <div class="flex items-center">
+                        <button id="dropdownRadioButton" data-dropdown-toggle="dropdownDefaultRadio" class="inline-flex items-center text-gray-500 bg-white border border-gray-200 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
+                              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 me-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm3.982 13.982a1 1 0 0 1-1.414 0l-3.274-3.274A1.012 1.012 0 0 1 9 10V6a1 1 0 0 1 2 0v3.586l2.982 2.982a1 1 0 0 1 0 1.414Z"/>
+                                 </svg>
+                              Last 30 days
+                              <svg class="w-4 h-4 ms-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="m1 1 4 4 4-4"/>
+                              </svg>
+                        </button>
+                        {/* <!-- Dropdown menu --> */}
+                        <div id="dropdownDefaultRadio" class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
+                           <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownRadioButton">
+                              <li>
+                              <div class="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
+                              </div>
+                              </li>
+                              <li>
+                              <div class="flex items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
+                              </div>
+                              </li>
+                              <li>
+                              <div class="flex items-center">
+                                    <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                                    <label for="default-radio-3" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
+                              </div>
+                              </li>
+                           </ul>
+                        </div>
+                           
+                     </div>
+                     <label for="table-search" class="sr-only">Search</label>
+                     <div class="relative">
+                           <div class="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">
+                              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                           </div>
+                           <input type="text" id="table-search" class="block p-2 ps-10 text-sm text-gray-900 border border-gray-200 rounded-lg w-60  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for items"/>
+                     </div>
+                  </div>
                </div>
                {/* Container Table */}
-               <div class="flex items-center justify-center mb-4 rounded dark:bg-gray-800">
-                  <div class="relative overflow-x-auto sm:rounded-lg mb-10">
-                     {/* Filter dan Search Bar */}
-                     <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-7">
-                        <p class="text-3xl font-bold">Task Overview2</p>
-                        <div class="flex gap-5">
-                           <div class="flex items-center">
-                              <button id="dropdownRadioButton" data-dropdown-toggle="dropdownDefaultRadio" class="inline-flex items-center text-gray-500 bg-white border border-gray-200 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
-                                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 me-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                          <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm3.982 13.982a1 1 0 0 1-1.414 0l-3.274-3.274A1.012 1.012 0 0 1 9 10V6a1 1 0 0 1 2 0v3.586l2.982 2.982a1 1 0 0 1 0 1.414Z"/>
-                                       </svg>
-                                    Last 30 days
-                                    <svg class="w-4 h-4 ms-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="m1 1 4 4 4-4"/>
-                                    </svg>
-                              </button>
-                              {/* <!-- Dropdown menu --> */}
-                              <div id="dropdownDefaultRadio" class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
-                                 <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownRadioButton">
-                                    <li>
-                                    <div class="flex items-center">
-                                          <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                                          <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
-                                    </div>
-                                    </li>
-                                    <li>
-                                    <div class="flex items-center">
-                                          <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                                          <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
-                                    </div>
-                                    </li>
-                                    <li>
-                                    <div class="flex items-center">
-                                          <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                                          <label for="default-radio-3" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
-                                    </div>
-                                    </li>
-                                 </ul>
-                              </div>
-                                 
-                           </div>
-                           <label for="table-search" class="sr-only">Search</label>
-                           <div class="relative">
-                                 <div class="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">
-                                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-                                 </div>
-                                 <input type="text" id="table-search" class="block p-2 ps-10 text-sm text-gray-900 border border-gray-200 rounded-lg w-60  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for items"/>
-                           </div>
-                        </div>
-                     </div>
+               <div class="flex items-center justify-center pb-4 pt-2 rounded-t-xl dark:bg-gray-800 shadow-xl">
+                  <div class="relative overflow-x-auto sm:rounded-lg">
+                     
+                     
+                     {/* table */}
                      <table class="w-full bg-white shadow-sm text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase  dark:bg-gray-700 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase  dark:bg-gray-700 dark:text-gray-400 border-b-2 border-[#F7F7F8]">
                               <tr>
                                  <th scope="col" class="p-4">
                                     <div class="flex items-center">
@@ -1105,19 +1115,19 @@ const Admin = () => {
                                  <th scope="col" class="px-6 py-3 text-base">
                                     Product name
                                  </th>
-                                 <th scope="col" class="px-6 py-3 text-base">
+                                 <th scope="col" class="px-6 py-3 text-base text-center">
                                     Color
                                  </th>
-                                 <th scope="col" class="px-6 py-3 text-base">
+                                 <th scope="col" class="px-6 py-3 text-base text-center">
                                     Category
                                  </th>
                                  <th scope="col" class="px-6 py-3 text-base text-center">
                                     Price
                                  </th>
-                                 <th scope="col" class="px-6 py-3 text-base">
+                                 <th scope="col" class="px-6 py-3 text-base text-center">
                                     Price
                                  </th>
-                                 <th scope="col" class="px-6 py-3 text-base">
+                                 <th scope="col" class="px-6 py-3 text-base text-center">
                                     Action
                                  </th>
                               </tr>
@@ -1130,37 +1140,74 @@ const Admin = () => {
                                           <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                                     </div>
                                  </td>
-                                 <th scope="row" class="min-w-[250px] text-base px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Apple MacBook Pro 17"
+                                 <th scope="row" class="min-w-[250px] text-base px-6 my-[auto] font-medium text-gray-900 dark:text-white">
+                                       Apple MacBook Pro 17" Apple MacBook Pro 17"
                                  </th>
-                                 <td class="px-6 py-4 min-w-[200px]">
-                                    <div class="flex -space-x-4 rtl:space-x-reverse">
+                                 <td class="px-4 py-4 min-w-[130px]">
+                                    <div class="flex -space-x-4 justify-center">
                                        <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
                                        <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
                                        <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
                                        <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
                                     </div>
                                  </td>
-                                 <td class="h-[64.5px] px-6 flex items-center justify-center">
+                                 <td class="h-[64.5px] px-4 flex items-center justify-center">
                                     <div class="text-base font-medium dark:text-white mr-4">43%</div>
-                                    <div class="w-[200px] bg-gray-200 rounded-full h-2 dark:bg-gray-700">
-                                       <div class="bg-blue-600 h-2 rounded-full w-[43%]"></div>
+                                    <div class="w-[110px] bg-[#BEC8FF] rounded-full h-2 dark:bg-gray-700">
+                                       <div class="bg-[#546FFF] h-2 rounded-full w-[43%]"></div>
                                     </div>
                                  </td>
-                                 <td class="px-6 py-4">
-                                    <div class="text-center w-[150px] h-[27px] bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">Dark</div>
+                                 <td class="px-4 py-4">
+                                    <div class="flex justify-center bg-[#BEC8FF] text-[#546FFF] text-center w-[110px] h-[27px] text-sm font-medium me-2 px-2.5 leading-[27px] rounded-full dark:bg-gray-700 dark:text-gray-300">
+                                       In Progress
+                                    </div>
                                  </td>
-                                 <th scope="row" class="min-w-[100px] px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                 <th scope="row" class="text-center min-w-[100px] px-4 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     2 Days
                                  </th>
-                                 <td class="min-w-[100px] px-6 py-4">
-                                    <a href="#" class="font-medium text-base text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                 <td class="px-4 py-4">
+                                    <div href="#" class="w-[36px] rounded-full flex hover:bg-gray-200 mx-[auto] py-2 justify-center font-medium text-base text-blue-600 dark:text-blue-500 hover:underline">
+                                       <FontAwesomeIcon className="h-[20px] text-[#141522]" icon="fa-solid fa-ellipsis"/>
+                                    </div>
+                                    {/* <div class="w- bg-[#BEC8FF] rounded-full h-2 dark:bg-gray-700">
+                                       <div class="bg-[#546FFF] h-2 rounded-full w-[43%]"></div>
+                                    </div> */}
                                  </td>
                               </tr>
-                              
                         </tbody>
                      </table>
+                     
+                     {/* <nav class="flexitems-center flex-column flex-wrap md:flex-row justify-between pt-4" aria-label="Table navigation">
+                        
+                     </nav> */}
                   </div>
+               </div>
+               {/* pagination */}
+               <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4 px-4 bg-white rounded-b-xl">
+                  <span class="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing <span class="font-semibold text-gray-900 dark:text-white">1-10</span> of <span class="font-semibold text-gray-900 dark:text-white">1000</span></span>
+                  <ul class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
+                     <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+                     </li>
+                     <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                     </li>
+                     <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                     </li>
+                     <li>
+                        <a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+                     </li>
+                     <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+                     </li>
+                     <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+                     </li>
+                     <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+                     </li>
+                  </ul>
                </div>
                <div class="grid grid-cols-2 gap-4">
                   <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
