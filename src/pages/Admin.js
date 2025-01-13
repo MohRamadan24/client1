@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Admin = () => {
 
-   // handler click drop down table action
+   const containers = [1, 2, 3, 4];
    
 
   // Initialize state for theme (dark or light)
@@ -268,8 +268,9 @@ const Admin = () => {
       }
    };
       
-      const cardWidth = () => cardWrapperRef.current.children[0].offsetWidth;
-  return (
+   const cardWidth = () => cardWrapperRef.current.children[0].offsetWidth;
+
+   return (
     <div>
       <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
       {/* <script src="../path/to/flowbite/dist/flowbite.min.js"></script> */}
@@ -584,7 +585,7 @@ const Admin = () => {
       <div class="flex flex-col min-[900px]:flex-row flex-wrap xl:ml-64">
          {/* Konten Kiri */}
          <div class="p-7 w-full min-[900px]:max-w-[calc(100%-455px)] bg-[#FCFCFC] mt-[88px]">
-               {/* Container Grafik */}
+            {/* Container Grafik */}
             <div class="flex flex-col w-full 2xl:flex-row mb-4 gap-7">
                <div class="flex flex-row items-center w-full 2xl:w-[220px] h-[132px] 2xl:h-[264px] 2xl:flex-col bg-[#141522] shrink-0 rounded-lg shadow dark:bg-gray-800 justify-between">
                   <div class="flex flex-col h-full 2xl:h-1/2 w-1/2 2xl:w-full justify-between px-4 md:px-4 py-6 items-center 2xl:items-start">                       
@@ -1103,7 +1104,8 @@ const Admin = () => {
                   </div>
                </div>
             </div>
-               {/* Container Table */}
+
+            {/* Container Table */}
             <div class="flex items-center justify-center pb-4 pt-2 rounded-t-xl dark:bg-gray-800 shadow-xl">
                <div class="relative overflow-x-auto overlow-y-auto sm:rounded-lg pb-10">
                   {/* table */}
@@ -1137,6 +1139,7 @@ const Admin = () => {
                            </tr>
                      </thead>
                      <tbody>
+                        {containers.map((id) => (             
                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                               <td class="w-4 p-4">
                                  <div class="flex items-center">
@@ -1184,14 +1187,17 @@ const Admin = () => {
                                  {/* <div class="w- bg-[#BEC8FF] rounded-full h-2 dark:bg-gray-700">
                                     <div class="bg-[#546FFF] h-2 rounded-full w-[43%]"></div>
                                  </div> */}
+                                 <ContainerWithPopup key={id} id={id} />
                               </td>
                            </tr>
+                        ))}
                      </tbody>
                   </table>
                   {/* <nav class="flexitems-center flex-column flex-wrap md:flex-row justify-between pt-4" aria-label="Table navigation">  
                   </nav> */}
                </div>
             </div>
+
             {/* pagination */}
             <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4 px-4 bg-white rounded-b-xl">
                <span class="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing <span class="font-semibold text-gray-900 dark:text-white">1-10</span> of <span class="font-semibold text-gray-900 dark:text-white">1000</span></span>
@@ -1219,6 +1225,7 @@ const Admin = () => {
                   </li>
                </ul>
             </div>
+
             <div class="grid grid-cols-2 gap-4">
                <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
                   <p class="text-2xl text-gray-400 dark:text-gray-500">
@@ -1379,16 +1386,20 @@ const ContainerWithPopup = ({ id }) => {
 
   return (
     <div href="#" class="w-[36px] rounded-full flex hover:bg-gray-200 mx-[auto] py-2 justify-center font-medium text-base text-blue-600 dark:text-blue-500 hover:underline">
-                                    <FontAwesomeIcon className="h-[20px] text-[#141522]" icon="fa-solid fa-ellipsis"/>
-                                    <div class="hidden w-[110px] mt-[28px] mr-[74px] h-auto z-100 bg-white absolute shadow-[5px_5px_20px_0px_rgba(170,170,170)] rounded-xl p-2">
-                                       <div class="w-full h-5] px-2.5 py-1.5 flex items-center">
-                                          <p class="text-md text-black font-normal">@ Sync</p>
-                                       </div>
-                                       <div class="w-full h-5] px-2.5 py-1.5 flex items-center">
-                                          <p class="text-md text-black font-normal">@ Sync</p>
-                                       </div>
-                                    </div>
-                                 </div>
+      <button onClick={togglePopup}>
+         <FontAwesomeIcon className="h-[20px] text-[#141522]" icon="fa-solid fa-ellipsis"/>
+      </button>
+      {isPopupVisible && (
+         <div class="w-[110px] mt-[28px] mr-[74px] h-auto z-100 bg-white absolute shadow-[5px_5px_20px_0px_rgba(170,170,170)] rounded-xl p-2">
+            <div class="w-full h-5] px-2.5 py-1.5 flex items-center">
+               <p class="text-md text-black font-normal">@ Sync</p>
+            </div>
+            <div class="w-full h-5] px-2.5 py-1.5 flex items-center">
+               <p class="text-md text-black font-normal">@ Sync</p>
+            </div>
+         </div>
+      )}
+   </div>
   );
 };
 export default Admin
