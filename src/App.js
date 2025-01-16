@@ -29,7 +29,7 @@ function App() {
         <div className="pages">
           <Routes>
             <Route 
-              path="/" 
+              path="/fitness" 
               element={<Splash />} 
             />
             <Route 

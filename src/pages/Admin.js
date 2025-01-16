@@ -585,6 +585,7 @@ const Admin = () => {
       <div class="flex flex-col min-[900px]:flex-row flex-wrap xl:ml-64">
          {/* Konten Kiri */}
          <div class="p-7 w-full min-[900px]:max-w-[calc(100%-455px)] bg-[#FCFCFC] mt-[88px]">
+
             {/* Container Grafik */}
             <div class="flex flex-col w-full 2xl:flex-row mb-4 gap-7">
                <div class="flex flex-row items-center w-full 2xl:w-[220px] h-[132px] 2xl:h-[264px] 2xl:flex-col bg-[#141522] shrink-0 rounded-lg shadow dark:bg-gray-800 justify-between">
@@ -652,6 +653,115 @@ const Admin = () => {
                   </div>
                   <div id="labels-chart" class="m-4 pr-2 pl-1 rounded-lg bg-white pb-[-15px]"></div>
                </div> 
+            </div>
+
+            {/* Container Slider Task */}
+            <div class="flex items-center justify-center h-auto mb-7 rounded bg-[#FCFCFC] dark:bg-gray-800">
+               <div className="relative w-full overflow-hidden gap-7">
+                  <div class="flex mb-4">
+                     <div class="w-1/2 h-auto flex items-center">
+                        <p class="text-3xl font-bold">Montly Mentors</p>
+                     </div>
+                     <div class="w-1/2 h-auto flex justify-end">
+                        <button className="transform h-16 w-12 p-2 rounded-full" onClick={slideLeft}>
+                        ❮
+                        </button>
+                        <button className="transform h-16 w-12 p-2 rounded-full" onClick={slideRight}>
+                        ❯
+                        </button>
+                     </div>
+                  </div>
+                  <div ref={cardWrapperRef} className="flex h-auto transition-transform gap-7 duration-300 ease-in-out">
+                     <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
+                        <div class="pt-3">
+                           <div class="flex">
+                              <img class="w-14 h-14 rounded-full mr-5" src="assets/images/splash-banner.jpg"/>
+                              <div>
+                                 <p class="text-xl font-medium">Curious George</p>
+                                 <p class="text-md font-normal text-gray-400">UI UX Designer</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
+                        <a href="#">
+                           <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
+                        </a>
+                        <div class="pt-3">
+                           <a href="#">
+                                 <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
+                           </a>
+                           <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                           <div class="w-full mb-7">
+                              <div class="flex justify-between">
+                                 <p class="text-xl font-medium mb-3">Progress</p>
+                                 <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                              </div>
+                              <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                 <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                              </div>
+                           </div>
+                           <div class="flex items-center justify-between mb-2">
+                              <div class="flex items-center ml-2">
+                                 <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                       <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                       <path d="M12 6v6l4 2"></path>
+                                    </g>
+                                 </svg>
+                                 <p class="text-lg font-[500]">3 Days Left</p>
+                              </div>
+                              <div class="flex -space-x-4 rtl:space-x-reverse">
+                                 <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                 <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                 <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                 <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                 <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="flex-none h-auto w-full min-[1500px]:w-[calc(100%/2-14px)] min-[1800px]:w-[calc((100%-56px)/3)] p-7 bg-white rounded-lg dark:bg-gray-800">
+                        <a href="#">
+                           <img class="rounded-xl" src="assets/images/splash-banner.jpg" alt="" />
+                        </a>
+                        <div class="pt-3">
+                           <a href="#">
+                                 <h5 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
+                           </a>
+                           <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">the biggest</p>
+                           <div class="w-full mb-7">
+                              <div class="flex justify-between">
+                                 <p class="text-xl font-medium mb-3">Progress</p>
+                                 <p class="text-lg text-[#546FFF] font-medium mb-3">43 %</p>
+                              </div>
+                              <div class="w-full bg-[#BEC8FF] rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                 <div class="bg-[#546FFF] w-[43%] h-2.5 rounded-full dark:bg-blue-500"></div>
+                              </div>
+                           </div>
+                           <div class="flex items-center justify-between mb-2">
+                              <div class="flex items-center ml-2">
+                                 <svg class=" text-gray-00 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+                                       <path d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></path>
+                                       <path d="M12 6v6l4 2"></path>
+                                    </g>
+                                 </svg>
+                                 <p class="text-lg font-[500]">3 Days Left</p>
+                              </div>
+                              <div class="flex -space-x-4 rtl:space-x-reverse">
+                                 <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                 <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                 <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                 <img class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800" src="assets/images/splash-banner.jpg" alt=""/>
+                                 <a class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  
+                  </div>
+               </div>
             </div>
 
             {/* Container Slider Task */}
@@ -1106,8 +1216,8 @@ const Admin = () => {
             </div>
 
             {/* Container Table */}
-            <div class="flex items-center justify-center pb-4 pt-2 rounded-t-xl dark:bg-gray-800 shadow-xl">
-               <div class="relative overflow-x-auto overlow-y-auto sm:rounded-lg pb-10">
+            <div class="flex bg-white items-center justify-center pb-4 pt-2 rounded-t-xl dark:bg-gray-800 shadow-xl">
+               <div class="relative bg-white overflow-x-auto overlow-y-auto sm:rounded-lg pb-10">
                   {/* table */}
                   <table class="w-full bg-white shadow-sm text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                      <thead class="text-xs text-gray-700 uppercase  dark:bg-gray-700 dark:text-gray-400 border-b-2 border-[#F7F7F8]">
@@ -1199,7 +1309,7 @@ const Admin = () => {
             </div>
 
             {/* pagination */}
-            <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4 px-4 bg-white rounded-b-xl">
+            <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-6 px-4 bg-white rounded-b-xl">
                <span class="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing <span class="font-semibold text-gray-900 dark:text-white">1-10</span> of <span class="font-semibold text-gray-900 dark:text-white">1000</span></span>
                <ul class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
                   <li>
@@ -1256,6 +1366,7 @@ const Admin = () => {
                   </p>
                </div>
             </div>
+
          </div>
          {/* Konten Kanan */}
          <div class="w-full min-[900px]:w-[455px] min-w-[455px] rounded-lg mt-[88px]">
@@ -1378,19 +1489,42 @@ const Admin = () => {
 
 
 const ContainerWithPopup = ({ id }) => {
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
+   const [isPopupVisible, setIsPopupVisible] = useState(false);
+   const popupRef = useRef(null);
 
-  const togglePopup = () => {
-    setIsPopupVisible(!isPopupVisible);
-  };
+   const togglePopup = () => {
+      setIsPopupVisible(!isPopupVisible);
+   };
+
+   // Close popup when clicking outside
+   const handleClickOutside = (event) => {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+         setIsPopupVisible(false);
+         }
+   };
+   
+   useEffect(() => {
+      if (isPopupVisible) {
+         document.addEventListener("mousedown", handleClickOutside);
+      } else {
+         document.removeEventListener("mousedown", handleClickOutside);
+      }
+
+      // Cleanup the event listener on unmount
+      return () => {
+         document.removeEventListener("mousedown", handleClickOutside);
+      };
+   }, [isPopupVisible]);
+
+
 
   return (
-    <div href="#" class="w-[36px] rounded-full flex hover:bg-gray-200 mx-[auto] py-2 justify-center font-medium text-base text-blue-600 dark:text-blue-500 hover:underline">
-      <button onClick={togglePopup}>
+    <div href="#" class="w-[36px] h-[36px] rounded-full flex hover:bg-gray-200 mx-[auto] justify-center font-medium text-base text-blue-600 dark:text-blue-500">
+      <button onClick={togglePopup} class="w-[36px] h-[36px] flex justify-center items-center">
          <FontAwesomeIcon className="h-[20px] text-[#141522]" icon="fa-solid fa-ellipsis"/>
       </button>
       {isPopupVisible && (
-         <div class="w-[110px] mt-[28px] mr-[74px] h-auto z-100 bg-white absolute shadow-[5px_5px_20px_0px_rgba(170,170,170)] rounded-xl p-2">
+         <div ref={popupRef} class="w-[110px] mt-[28px] mr-[74px] h-auto z-100 bg-white absolute shadow-[5px_5px_20px_0px_rgba(170,170,170)] rounded-xl p-2">
             <div class="w-full h-5] px-2.5 py-1.5 flex items-center">
                <p class="text-md text-black font-normal">@ Sync</p>
             </div>
