@@ -22,7 +22,7 @@ const WorkoutForm = () => {
 
         const workout = {title, load, reps}
 
-        const response = await fetch('https://server1-9blggpmkw-tinitymerge-devs-projects.vercel.app/api/workouts', {
+        const response = await fetch('https://server1-2i4o-38ccmv0u2-tinitymerge-devs-projects.vercel.app/api/workouts', {
             method: 'POST',
             body: JSON.stringify(workout),
             headers:  {
